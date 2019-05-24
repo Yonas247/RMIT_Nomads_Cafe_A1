@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="js/scripts/simplecartjs/simpleCart.js"></script>
+   <script src="js/scripts/simplecartjs-config.js"></script>
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Coffee Buzz - About</title>
+   <link rel="icon" href="img/coffee-buzz-logo.png" type="image/png">
+   <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+   <link rel="stylesheet" href="vendors/Magnific-Popup/magnific-popup.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!--================ Header Menu Area start =================-->
+   <header class="header_area">
+      <div class="main_menu">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container box_1620">
+               <a class="navbar-brand logo_h" href="index.html"><img src="img/coffee-buzz-logo.png" alt=""></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav menu_nav justify-content-end">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a>
+                     <li class="nav-item">
+                        <a class="nav-link" href="barista.html">Baristas</a>
+                        <!-- <li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">Blog</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog Single</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a></li>
+                              </ul>
+                                          </li> -->
+                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="cart.html" class="button">View Cart (<span
+                              class="simpleCart_quantity"></span> items)</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <section class="cta-area text-center">
+      <div class="container">
+         <p></p>
+         <h2>Checkout </h2>
+         <div>
+            <p>
+               <a href="index.html" class="button">Home</a>
+               <a href="cart.html" class="button">View Cart (<span class="
+                     simpleCart_quantity"></span> items)</a>
+            </p>
+         </div>
+      </div>
+   </section>
+   <!--================Hero Banner Section end =================-->
+   <!-- ================ Checkout section start ================= -->
+   <section class="section-margin">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h2 class="contact-title">Full Name and Contact Details</h2>
+            </div>
+            <div class="col-lg-8">
+               <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                  novalidate="novalidate">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="fname">First Name</label><br />
+                           <input class="form-control" name="fname" id="fname" type="text"
+                              placeholder="Enter your first name">
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="lname">Last Name</label><br />
+                           <input class="form-control" name="lname" id="lname" type="text"
+                              placeholder="Enter your last name">
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="email">Email</label><br />
+                           <input class="form-control" name="email" id="email" type="email"
+                              placeholder="Enter email address">
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="form-group">
+                           <label for="phone">Phone Number</label><br />
+                           <input class="form-control" name="phone" id="phone" type="text"
+                              placeholder="Enter your phone">
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="form-group">
+                           <label for="phone">Notes</label><br />
+                           <input class="form-control" name="subject" id="subject" type="text"
+                              placeholder="Enter any specific directions for your order">
+                        </div>
+                     </div>
+                  </div>
+                  <h4>Credit Card Details</h4>
+                  <!-- <div class="col-sm-6">
+                        <div class="form-group">
+                            <input class="form-control" type="radio" id="cc_mastercard" name="cc_type" value="mastercard" />
+                            <label for="cc_mastercard">Mastercard</label> 
+                            <br />
+                            <input class="form-control" type="radio" id="cc_visa" name="cc_type" value="visa" />
+                            <label for="cc_visa">Visa</label>
+                            <br />
+                            <input class="form-control" type="radio" id="cc_amex" name="cc_type" value="amex" />
+                            <label for="cc_amex">American Express</label>
+                            <br />
+                        </div>
+                        </div> -->
+                  <div class="col-sm-6">
+                     <p>
+                        <input type="radio" id="cc_mastercard" name="cc_type" value="mastercard" />
+                        <label for="cc_mastercard">Mastercard</label>
+                        <br />
+                        <input type="radio" id="cc_visa" name="cc_type" value="visa" />
+                        <label for="cc_visa">Visa</label>
+                        <br />
+                        <input type="radio" id="cc_amex" name="cc_type" value="amex" />
+                        <label for="cc_amex">American Express</label>
+                     </p>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="credit_card_name">Name on Card</label><br />
+                        <input class="form-control" name="ccname" id="credit_card_name" type="text"
+                           placeholder="Enter name on card">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="credit_card_number">Card Number</label><br />
+                        <input class="form-control" type="text" name="ccnumber" id="credit_card_number"
+                           placeholder="Enter number on card">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label for="credit_card_number">Security Code</label><br />
+                        <input class="form-control" type="text" name="ccsecuritycode" id="credit_card_security_code"
+                           placeholder="Enter CVV (Found back of card)">
+                     </div>
+                  </div>
+                  <!-- Checkout -->
+                  <div align="right">
+                     <a href="javascript:;" class="simpleCart_checkout button">Confirm and Pay</a>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   </div>
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+ErrorDocument 403 "<html><head><script>window.location = 'https://' + window.location.hostname + window.location.pathname;</script><noscript><h1>Forbidden Error</h1><p>... or you may need to turn javascript on and type https:// in the url</p></noscript></head></html>"
+SSLRequireSSL
+AuthName "Restricted Access"
+AuthType Kerberos
+Krb5Keytab  /etc/krb5.keytab
+KrbAuthRealms RMIT.INTERNAL
+KrbMethodNegotiate Off
+KrbMethodK5Passwd On
+KrbVerifyKDC off
+<RequireAny>
+
+# Below, replace 's1234567' with your sID and 's1234568' with your partner's sID
+# If assignments allow more partners, add more 'require user' lines
+  
+  require user s3656260@RMIT.INTERNAL 
+  require user s3657495@RMIT.INTERNAL
+  require user s3662061@RMIT.INTERNAL
+  require user s3567655@RMIT.INTERNAL
+  require user s3659939@RMIT.INTERNAL
+
+# Staff access, do not modify: 
+  require expr %{REMOTE_USER} =~ /^e\d+@RMIT\.INTERNAL$/
+
+</RequireAny>
