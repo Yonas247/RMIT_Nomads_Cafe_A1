@@ -1,0 +1,50 @@
+/* section intro start
+	============================================================================================ */
+// .section-intro{
+//   max-width: 640px;
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   p{
+//     margin-bottom: 0;
+//   }
+// }
+
+// .section-intro-img{
+//   margin-bottom: 10px;
+// }
+
+
+.section-intro{
+  max-width: 460px;
+
+
+  .intro-title{
+    display: inline-block;
+    font-size: 24px;
+    color: $primary-color;
+    padding-right: 115px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after{
+      content: "";
+      display: block;
+      height: 1px;
+      min-width: 100px;
+      background-color: #3a414e;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
+
+
+/* section intro end
+	============================================================================================ */
+
+

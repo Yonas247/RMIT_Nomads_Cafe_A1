@@ -1,0 +1,50 @@
+/*=================== custom button rule start ====================*/
+.button{
+  display: inline-block;
+  background-color: $primary-color;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 9px 25px;
+  text-transform: capitalize;
+  @include transition;
+  
+
+  @media(min-width: 600px){
+    padding: 12px 45px;    
+  }
+
+  &:hover{
+    background-color: red;
+    color: $white;
+  }
+}
+
+.button-header{
+  padding: 7px 26px;
+  border-radius: 0;
+}
+
+.button-hero{
+  // display: flex;
+  align-self: center;
+
+  @media(max-width: 845px){
+    padding: 8px 19px;
+  }
+}
+
+.button-shadow{
+  box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15); 
+}
+
+button.button{
+  border: 0;
+}
+
+.button-contactForm{
+  border-radius: 5px;
+}
+
+/*=================== custom button rule end ====================*/
